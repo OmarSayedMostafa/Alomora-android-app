@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.omar.yamosahel.New_reaservation">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout3"
+        android:weightSum="1"
+        android:layout_below="@+id/namesandpics">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner4"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:hint="Please Enter Your Password"
+            android:ems="10"
+            android:id="@+id/enterpass.edittext"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/magic_imageButton2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.89"
+            android:background="@drawable/secondselector" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:rowCount="3"
+        android:columnCount="13"
+        android:id="@+id/namesandpics"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="88dp"
+            android:layout_height="90dp"
+            android:id="@+id/imageButton"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/propic" />
+
+        <TextView
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="user name"
+            android:textSize="30dp"
+            android:id="@+id/usernameee"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="1"
+            android:layout_column="12"
+            android:textColor="#ff010101" />
+    </GridLayout>
+
+</RelativeLayout>
